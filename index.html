@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter a Number for the table: <input type="number" id="a"><br><br>
+    <button id="click" onclick="hashir();">Enter</button>
+</body>
+
+<script>
+    function hashir(){
+        let a = +document.getElementById("a").value
+        document.write('Table of '+ a +'<br><hr>')
+        for (let b=1;b<=10;b++){
+        document.write(a + ' x ' + b +' = ' + (a*b)+ '<br>')
+        }
+    }
+    </script>
+</html>
